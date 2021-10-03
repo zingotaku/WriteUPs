@@ -13,7 +13,7 @@ Agora, vamos completar o narnia0
 ##
 
 Dando uma analisada no código de narnia0.c, encontramos a seguinte coisa:
-<img src="www.imgur.com/a/dg57PKq" width="60%"><br><br>
+<img src="https://github.com/zingotaku/WriteUPs/blob/main/Narnia0/Uepa.png" width="60%"><br><br>
 Lendo o código, percebemos alguams coisas como: temos a va1, que recebe o valor "0x41414141"
 e também a 0xdeadbeef, se o programa receber a 0xdeadbeef, a gente ganha uma shell em /bin/sh
 porém, o programa sempre, sempre retorna 0x41414141, dando mais uma lida no código, percebemos que o sistema aguenta sómente 24 bytes, ou seja... Se ocuparmos todos os 24 bytes, não vai ter como fazer a verificação do código, e assim podemos alterar o ret para ele retornar 0xdeadbeef!
